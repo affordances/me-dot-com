@@ -28,9 +28,10 @@ body {
 }
 
 .name {
-  font-size: 4.5em;
   background-color: black;
   color: yellow;
+  font-size: 4.5em;
+  text-align: center;
 }
 
 .under-construction {
