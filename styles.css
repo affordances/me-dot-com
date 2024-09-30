@@ -1,71 +1,74 @@
 body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   font-family: sans-serif;
-  gap: 24px;
   height: 100vh;
-  justify-content: center;
   margin: 0;
   padding: 0;
   width: 100vw;
-
-  backdrop-filter: saturate(0) contrast(500);
-  background-image: url("images/fetus.gif");
-  background-repeat: repeat;
 }
 
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+h2, h4, p {
+  margin: 0;
 }
 
-@keyframes rotate {
-  to {
-    --angle: 360deg;
+a {
+  color: black;
+  display: inline-block;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+
+  &:link,
+  :visited {
+    color: black;
   }
 }
 
-.name {
-  background-color: black;
-  color: yellow;
-  font-size: 4.5em;
-  text-align: center;
+img {
+  width: 40vw;
+
+  @media only screen and (max-width: 1200px) {
+    width: 75vw;
+  } 
 }
 
-.under-construction {
-  --angle: 0deg;
-  animation: 10s rotate linear infinite;
-  border: 7vmin solid;
-  filter: saturate(30) contrast(10);
-  height: 50vmin;
-  width: 80vmin;
+.container {
+  align-items: center;
+  display: flex;
+  gap: 88px;
+  justify-content: center;
+  padding: 88px 32px;
 
-  border-image: conic-gradient(
-      from var(--angle),
-      red,
-      yellow,
-      lime,
-      aqua,
-      blue,
-      magenta,
-      red
-    )
-    1;
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+  } 
 }
 
-.zalgodither > picture::after {
-  background-image: url("images/bluenoise.png");
-  background-repeat: repeat;
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0px;
-  opacity: 25%;
-  pointer-events: none;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 2;
+.left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  width: 400px;
+
+  @media only screen and (max-width: 1200px) {
+    width: 75vw;
+  } 
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.code-things {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
