@@ -36,7 +36,7 @@ img {
 .container {
   align-items: center;
   display: flex;
-  gap: 88px;
+  gap: 72px;
   justify-content: center;
   padding: 88px 32px;
 
@@ -53,7 +53,7 @@ img {
 .right-column {
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 48px;
   width: 400px;
 
   @media only screen and (max-width: 1200px) {
