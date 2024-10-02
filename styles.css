@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: monospace;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@ img {
 .container {
   align-items: center;
   display: flex;
-  gap: 72px;
+  gap: 56px;
   justify-content: center;
   padding: 88px 32px;
 
