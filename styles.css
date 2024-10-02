@@ -11,6 +11,7 @@ h2, h4, p {
 }
 
 a {
+  background-color: white;
   color: black;
   display: inline-block;
 
@@ -21,7 +22,13 @@ a {
 
   &:link,
   :visited {
+    background-color: white;
     color: black;
+    
+    &:hover {
+      background-color: black;
+      color: white;
+    }
   }
 }
 
