@@ -1,6 +1,12 @@
+/* * {
+  border: 1px solid black;
+} */
+
+html,
 body {
   font-family: monospace;
-  height: 100vh;
+  font-size: 20px;
+  height: 100%vh;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -18,7 +24,7 @@ a {
   display: inline-block;
 
   &:hover {
-    background-color: black;
+    background-color: red;
     color: white;
   }
 
@@ -28,57 +34,47 @@ a {
     color: black;
 
     &:hover {
-      background-color: black;
+      background-color: red;
       color: white;
     }
   }
 }
 
-img {
+/* img {
   width: 40vw;
 
   @media only screen and (max-width: 1200px) {
     width: 75vw;
   }
-}
-
-ul,
-li {
-  list-style: none;
-}
+} */
 
 .container {
-  align-items: center;
   display: flex;
-  gap: 56px;
-  justify-content: center;
-  padding: 88px 32px;
+  gap: 88px;
+  height: 100%;
+  padding: 88px;
+  width: 100%;
 
-  @media only screen and (max-width: 1200px) {
+  /* @media only screen and (max-width: 1200px) {
     flex-direction: column;
-  }
+  } */
 }
 
-.links {
+.sidebar {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.left-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.right-column {
+.page-content {
   display: flex;
   flex-direction: column;
   gap: 48px;
   width: 400px;
 
-  @media only screen and (max-width: 1200px) {
+  /* @media only screen and (max-width: 1200px) {
     width: 75vw;
-  }
+  } */
 }
 
 .bio {
