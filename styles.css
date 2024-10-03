@@ -6,7 +6,9 @@ body {
   width: 100vw;
 }
 
-h2, h4, p {
+h2,
+h4,
+p {
   margin: 0;
 }
 
@@ -24,7 +26,7 @@ a {
   :visited {
     background-color: white;
     color: black;
-    
+
     &:hover {
       background-color: black;
       color: white;
@@ -37,7 +39,12 @@ img {
 
   @media only screen and (max-width: 1200px) {
     width: 75vw;
-  } 
+  }
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 .container {
@@ -49,7 +56,13 @@ img {
 
   @media only screen and (max-width: 1200px) {
     flex-direction: column;
-  } 
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .left-column {
@@ -65,7 +78,7 @@ img {
 
   @media only screen and (max-width: 1200px) {
     width: 75vw;
-  } 
+  }
 }
 
 .bio {
